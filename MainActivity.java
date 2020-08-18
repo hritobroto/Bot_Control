@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
     private static final int SETTINGS = 20;
     private UUID mDeviceUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
     private int mBufferSize = 50000; //Default
-    public static final String DEVICE_EXTRA = "com.example.lightcontrol.SOCKET";
-    public static final String DEVICE_UUID = "com.example.lightcontrol.uuid";
-    private static final String DEVICE_LIST = "com.example.lightcontrol.devicelist";
-    private static final String DEVICE_LIST_SELECTED = "com.example.lightcontrol.devicelistselected";
-    public static final String BUFFER_SIZE = "com.example.lightcontrol.buffersize";
+    public static final String DEVICE_EXTRA = "com.example.controller.SOCKET";
+    public static final String DEVICE_UUID = "com.example.controller.uuid";
+    private static final String DEVICE_LIST = "com.example.controller.devicelist";
+    private static final String DEVICE_LIST_SELECTED = "com.example.controller.devicelistselected";
+    public static final String BUFFER_SIZE = "com.example.controller.buffersize";
     private static final String TAG = "BlueTest5-MainActivity";
 
 
