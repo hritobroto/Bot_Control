@@ -12,8 +12,12 @@ long int Forward = 10;
 long int Backward = 30;
 long int Left = 20;
 long int Right = 40;
-long int Pull=50;
-long int Lift=60;
+long int Pull_in=50;
+long int Pull_out=60;
+long int Lift_up=70;
+long int Lift_down=80;
+long int Push_in=90;
+long int Push_out=100;
 
 char state = 0;
 void setup()
@@ -57,26 +61,37 @@ if (data == Backward)
 {
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  Serial.println("Left");
+  Serial.println("Forward");
 }
 if (data == Right)
 {
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  Serial.println("Right");
+  Serial.println("Forward");
 }*/
-if (data == Pull)
+if (data == Pull_in)
 {
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  Serial.println("Pull");
+  Serial.println("Backward");
 }
-if (data == Lift)
+if (data == Pull_out)
 {
   digitalWrite(in1,LOW);
   digitalWrite(in2,HIGH);
-  Serial.println("Lift");
+  Serial.println("Backward");
+}
+if (data == Lift_up)
+{
+  digitalWrite(in1,LOW);
+  digitalWrite(in2,HIGH);
+  Serial.println("Backward");
+}
+if (data == Lift_down)
+{
+  digitalWrite(in1,HIGH);
+  digitalWrite(in2,LOW);
+  Serial.println("Backward");
 }
    
-  
 }
