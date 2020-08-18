@@ -57,25 +57,25 @@ if (data == Backward)
 {
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  Serial.println("Forward");
+  Serial.println("Left");
 }
 if (data == Right)
 {
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  Serial.println("Forward");
+  Serial.println("Right");
 }*/
 if (data == Pull)
 {
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  Serial.println("Backward");
+  Serial.println("Pull");
 }
 if (data == Lift)
 {
   digitalWrite(in1,LOW);
   digitalWrite(in2,HIGH);
-  Serial.println("Backward");
+  Serial.println("Lift");
 }
    
 }
